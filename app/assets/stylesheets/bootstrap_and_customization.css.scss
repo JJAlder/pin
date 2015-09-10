@@ -1,3 +1,5 @@
+
+
 $body-bg:     #daffff;
 $navbar-default-bg: #1e2422;
 $navbar-default-link-color: #88beb1;
@@ -6,3 +8,8 @@ $jumbotron-bg: #daffff;
 
 
 @import 'bootstrap';
+
+
+.navbar-brand {
+     font-weight: bold;
+}
