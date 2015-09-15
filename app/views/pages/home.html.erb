@@ -1,12 +1,11 @@
 <div class="jumbotron center">
 	<h1>Welcome to Food Baby!!</h1>
 	<% if user_signed_in? %>
-	# do something
+	Are you ready to show the world the cause of your Food Baby!
 	<% else %>
-	<p>
-		<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
-    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
-	</p>
+		<p>
+			<%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %> now to start posting your pictures!
+		</p>
 	<% end %>
 
 	<img src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/OC8WX0E0X3.jpg" align:left/>
