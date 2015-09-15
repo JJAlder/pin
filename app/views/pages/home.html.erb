@@ -1,6 +1,13 @@
 <div class="jumbotron center">
 	<h1>Welcome to Food Baby!!</h1>
-	<p>Click here to <%= link_to "Submit", "#", class: "btn btn-primary btn-lg" %> your food pictures!</p>
+	<% if user_signed_in? %>
+	# do something
+	<% else %>
+	<p>
+		<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+    <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
+	</p>
+	<% end %>
 
 	<img src="https://snap-photos.s3.amazonaws.com/img-thumbs/960w/OC8WX0E0X3.jpg" align:left/>
 
