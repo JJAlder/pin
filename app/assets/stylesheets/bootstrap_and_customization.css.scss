@@ -1,10 +1,21 @@
 
 
 $body-bg:     #f3f8f7;
+$brand-primary: #ff006d;
+
 $navbar-default-bg: #1e2422;
 $navbar-default-link-color: #88beb1;
-$brand-primary: #ff006d;
+
+
 $jumbotron-bg: #f3f8f7;
+$jumbotron-heading-color:   #1e2422;
+$jumbotron-color:       #1e2422;
+
+$panel-default-heading-bg:   #1e2422;
+$panel-default-text:   #88beb1;
+$panel-default-border:   #1e2422;
+$panel-footer-bg:   #1e2422;
+$panel-footer-default-text: #88beb1; 
 
 
 @import 'bootstrap';
@@ -13,3 +24,4 @@ $jumbotron-bg: #f3f8f7;
 .navbar-brand {
      font-weight: bold;
 }
+
