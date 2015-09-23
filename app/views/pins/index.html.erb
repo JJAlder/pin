@@ -26,3 +26,7 @@
     </div>
   <% end %>
 </div>
+
+<div class:"center" style="text-align: center">
+  <%= will_paginate @posts, renderer: BootstrapPagination::Rails %>
+</div>
