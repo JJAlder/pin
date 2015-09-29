@@ -1,4 +1,6 @@
-<%= link_to 'Back', pins_path %>
+<div>
+	<%= link_to 'Back', pins_path, class: "btn btn-primary" %>
+</div>
 
 <div class="row">
 	<div class="col-md-offset-2 col-md-8">
@@ -12,7 +14,7 @@
 			
 			<% if @pin.user == current_user %>
 				 <%= link_to edit_pin_path(@pin) do %>
-              <span class="glyphicon glyphicon-pencil"></span>
+              <span class="glyphicon glyphicon-pencil", style="color:#848482"></span>
               Edit
             <% end %>
 			<% end %>

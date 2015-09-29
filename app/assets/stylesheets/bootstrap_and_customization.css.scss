@@ -1,30 +1,46 @@
 
 
-$body-bg:     #f3f8f7;
-$brand-primary: #ff006d;
+$body-bg:     #DFE2DB;
+$brand-primary: #FFF056;
 
-$navbar-default-bg: #1e2422;
-$navbar-default-link-color: #88beb1;
-$btn-default-bg: #1e2422;
-$btn-default-border: #88beb1;
+$navbar-default-bg: #191919;
+$navbar-default-link-color: #DFE2DB;
+$btn-default-bg: #191919;
+$btn-default-border: #191919;
+$btn-default-text:    #191919;
+$btn-primary-color:  #191919;
 
 
 
-$jumbotron-bg: #f3f8f7;
-$jumbotron-heading-color:   #1e2422;
+$jumbotron-bg: #FFFFCC;
+$jumbotron-heading-color:   #191919;
 $jumbotron-color:       #1e2422;
 
-$panel-default-heading-bg:   #1e2422;
-$panel-default-text:   #88beb1;
-$panel-default-border:   #1e2422;
-$panel-footer-bg:   #1e2422;
-$panel-footer-default-text: #88beb1; 
+
+$panel-default-heading-bg:   #191919;
+$panel-default-text:   #DFE2DB;
+$panel-default-border:   #191919;
+$panel-footer-bg:   #191919;
+$panel-footer-default-text: #DFE2DB; 
 
 
 @import "bootstrap-sprockets";
 @import 'bootstrap';
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 
-.center{ 
+body div{
+	font-family: 'Roboto Slab', serif;
+}
+
+a{
+	color:#848482
+}
+
+.btn-primary{
+  font-size:20px
+}
+
+.center { 
 margin: 0 auto; 
 } 
 
@@ -33,5 +49,11 @@ margin: 0 auto;
 }
 .navbar-brand {
      font-weight: bold;
+}
+
+.pagination > li > a{
+    z-index: 3;
+    color: #848482;
+    border-color: #ddd;
 }
 
