@@ -1,39 +1,42 @@
 
 
-$body-bg:     #DFE2DB;
-$brand-primary: #FFF056;
+$body-bg:     #FFFDD4;
+$brand-primary: #A61A20;
 
-$navbar-default-bg: #191919;
-$navbar-default-link-color: #DFE2DB;
-$btn-default-bg: #191919;
-$btn-default-border: #191919;
+$navbar-default-bg: #A61A20;
+$navbar-default-link-color: #350100;
+$btn-default-bg: #A61A20;
+$btn-default-border: #A61A20;
 $btn-default-text:    #191919;
-$btn-primary-color:  #191919;
+$btn-primary-color:  #350100;
 
 
-
-$jumbotron-bg: #FFFFCC;
+$jumbotron-bg: rgba(0,0,0,0);
 $jumbotron-heading-color:   #191919;
 $jumbotron-color:       #1e2422;
 
-
-$panel-default-heading-bg:   #191919;
-$panel-default-text:   #DFE2DB;
-$panel-default-border:   #191919;
-$panel-footer-bg:   #191919;
-$panel-footer-default-text: #DFE2DB; 
+$panel-default-bg:  green;
+$panel-default-heading-bg:   #A61A20;
+$panel-default-text:   #350100;
+$panel-default-border:   #A61A20;
+$panel-footer-bg:   #A61A20;
+$panel-footer-default-text: 350100; 
 
 
 @import "bootstrap-sprockets";
 @import 'bootstrap';
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 
-body div{
+body {
+	
 	font-family: 'Roboto Slab', serif;
+	background-image: image-url('wood.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
 }
 
 a{
-	color:#848482
+	color:#350100
 }
 
 .btn-primary{
@@ -56,4 +59,5 @@ margin: 0 auto;
     color: #848482;
     border-color: #ddd;
 }
+
 
