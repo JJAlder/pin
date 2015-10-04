@@ -79,7 +79,7 @@ Rails.application.configure do
 
 # Required for Heroku
 # Note to set this to your actual host
-  config.action_mailer.default_url_options = { host: => 'https://omr-foodbaby.herokuapp.com', port: 3000 }
+  config.action_mailer.default_url_options = { host: 'https://omr-foodbaby.herokuapp.com', port: 3000 }
 #Sets Paperclip to upload images to Amazon s3
 config.paperclip_defaults = {
     :storage => :s3,
