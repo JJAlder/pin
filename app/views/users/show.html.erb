@@ -1,0 +1,11 @@
+
+<div class="row profile">
+	<div class+"col-sm-4 col-md-3">
+		<%= image_tag(@user.avatar.url(:medium), class: 'avatar') %>
+		<h1><%= @user.full_name %></h1>
+		<ul>
+  		<%= content_tag(:li, ("Name: " + @user.name)) unless @user.name.blank? %>
+  		<%= content_tag(:li, ("Age: " + distance_of_time_in_words(Time.now, @user.date_of_birth) + " old")) unless @user.date_of_birth.blank? %>
+		</ul>
+	</div>
+</div>
