@@ -1,12 +1,12 @@
 
 
-$body-bg:     #FFFDD4;
-$brand-primary: #A61A20;
+$body-bg:     #FFFFF0;
+$brand-primary: #CB3117;
 
-$navbar-default-bg: #A61A20;
+$navbar-default-bg: #CB3117;
 $navbar-default-link-color: #350100;
-$btn-default-bg: #A61A20;
-$btn-default-border: #A61A20;
+$btn-default-bg: #CB3117;
+$btn-default-border: #CB3117;
 $btn-default-text:    #191919;
 $btn-primary-color:  #350100;
 
@@ -16,10 +16,10 @@ $jumbotron-heading-color:   #191919;
 $jumbotron-color:       #1e2422;
 
 $panel-default-bg:  green;
-$panel-default-heading-bg:   #A61A20;
+$panel-default-heading-bg:   #CB3117;
 $panel-default-text:   #350100;
-$panel-default-border:   #A61A20;
-$panel-footer-bg:   #A61A20;
+$panel-default-border:   #CB3117;
+$panel-footer-bg:   #CB3117;
 $panel-footer-default-text: 350100; 
 
 
@@ -28,14 +28,8 @@ $panel-footer-default-text: 350100;
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 
 body {
-	
 	font-family: 'Roboto Slab', serif;
-	background-image: image-url('wood.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-}
+	}
 
 a{
 	color:#350100
@@ -62,4 +56,28 @@ margin: 0 auto;
     border-color: #ddd;
 }
 
+.panel {
+	margin-top: 50px;
+}
 
+.carousel-caption {
+	color: rgba(203,49,23,0.8);
+	text-shadow:
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.round-image-50 {
+    background-color: white;
+    border: 1px solid #d9d9d9;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    text-align: center;
+    img { width: 100% }
+}

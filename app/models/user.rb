@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
  has_many :pins, dependent: :destroy
-
-validates :name, presence: true
-validates :name, uniqueness: true
+ has_attached_file :avatar, :styles => { :medium => "300x300>", :thumb => "100x100>" }, :default_url => "/images/:style/missing.png", :path => ":rails_root/public/system/:class/:attachment/:id_partition/:style/:filename" 
+  validates_attachment_content_type :avatar, :content_type => /\Aimage\/.*\Z/
+ validates :name, uniqueness: true
 end
