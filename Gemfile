@@ -18,7 +18,7 @@ gem 'masonry-rails', '~> 0.2.0'
 gem 'will_paginate', '~> 3.0.6'
 gem 'will_paginate-bootstrap'
 gem 'figaro'
-
+gem 'social-share-button', '~> 0.1.8'
 
 group :development, :test do
 	gem 'sqlite3'
