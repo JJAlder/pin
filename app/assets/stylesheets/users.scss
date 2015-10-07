@@ -9,7 +9,7 @@
     -moz-column-width: 15em;
     -webkit-column-width: 15em;
     -moz-column-gap: 0;
-    -webkit-column-gap: 0;
+    -webkit-column-gap: 8;
 }
 
 @media (min-width: 992px) {
@@ -28,10 +28,11 @@
 }
 
 .panel {
+
     display: inline-block;
     padding:  0;
-    margin:  0 0 10px 0;
-    width:98%;
+    margin:   11px;
+    width: 98%;
     img { width: 100%; }
 }
 
@@ -48,6 +49,7 @@
 
 .users .panel-body {
     padding: 0;
+
     p {
         margin: 10px;
         overflow-x: scroll;

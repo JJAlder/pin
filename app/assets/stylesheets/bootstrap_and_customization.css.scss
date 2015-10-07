@@ -50,6 +50,12 @@ margin: 0 auto;
      font-weight: bold;
 }
 
+.navbar {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
 .pagination > li > a{
     z-index: 3;
     color: #848482;
@@ -57,7 +63,13 @@ margin: 0 auto;
 }
 
 .panel {
+    display: inline-block;
+    padding:  0;
+    margin:   11px;
+    width: 98%;
+    img { width: 100%; }
 	margin-top: 50px;
+    box-shadow: 10px 10px 5px grey;
 }
 
 .carousel-caption {

@@ -7,19 +7,18 @@
   		<% @relationship = current_user.sent_invites.where(invited_id: @user.id).first %>
 
   		<% if @relationship %>
-    		<%= link_to "Stop following", @relationship, method: :delete %>
-  		<% else %>
-    		<%= form_for :relationship, url: relationships_path, html: { method: :post } do |f| %>
-      		<%= f.hidden_field :invited_id, value: @user.id %>
-      		<%= f.submit 'Follow', class: 'btn btn-primary' %>
-    		<% end %>
-  		<% end %>
+        <%= link_to "Stop following", @relationship, method: :delete %>
+      <% else %>
+        <%= form_for :relationship, url: relationships_path, html: { method: :post } do |f| %>
+          <%= f.hidden_field :invited_id, value: @user.id %>
+          <%= f.submit 'Follow', class: 'btn btn-primary' %>
+        <% end %>
+      <% end %>  
+        
+      
 		<% end %>
 			
-		<%= form_for :relationship, url: relationships_path, html: { method: :post } do |f| %>
-      <%= f.hidden_field :invited_id, value: @user.id %>
-      <%= f.submit 'Invite', class: 'btn btn-primary' %>
-    <% end %>
+		
 
 
 		<ul>
