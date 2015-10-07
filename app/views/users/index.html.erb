@@ -1,6 +1,9 @@
 
 
 <div class="container">
+    <div class:"center" style="text-align: center">
+        <%= will_paginate @users, renderer: BootstrapPagination::Rails %>
+    </div>
     <div class="users row">
         <% @users.each do |user| %>
         <div class="panel panel-default">
@@ -9,7 +12,7 @@
                 <%= image_tag(user.avatar.url(:medium)) %>
                 <p><%= user.full_name %></p>
             </div>
-            <% end %>
+            <% end %>   
         </div>
         <% end %>
     </div>

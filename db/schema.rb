@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151006202608) do
+ActiveRecord::Schema.define(version: 20151006220321) do
 
   create_table "pins", force: :cascade do |t|
     t.string   "description"
@@ -25,6 +25,13 @@ ActiveRecord::Schema.define(version: 20151006202608) do
   end
 
   add_index "pins", ["user_id"], name: "index_pins_on_user_id"
+
+  create_table "relationships", force: :cascade do |t|
+    t.integer  "inviting_id"
+    t.integer  "invited_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
